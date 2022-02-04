@@ -136,7 +136,7 @@ body {
 
 @media (max-width:400px){
     .center-conteudo-escrito-esquerda{
-        margin-left: 35%;
+        margin-left: 38%;
     }
 }
 /*--Conteudo Footer --*/
@@ -145,11 +145,23 @@ footer {
     background-color: black;
     color: white;
     padding: 15px;
-    text-align: center;
-    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media(max-width:950px){
     footer {
         font-size: 14px;
+    }
+}
+@media(max-width:450px){
+    footer{
+        width: 500px;
+        font-size: 12px;
+    }
+}
+@media (max-width:400px){
+    footer{
+        margin-top:25%;
     }
 }
