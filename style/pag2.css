@@ -18,13 +18,12 @@
     font-family: var(--font-titulo);
     font-size: 4em;
     color:var(--cor2);
-    margin-left: 7%;
+    margin:auto;
 }
 #subtitulo{
     font-family: var(--font-titulo);
     font-size: 1.5em;
     color: var(--cor2);
-    margin-left: 7%;
 }
 form{
     background-color: rgba(255, 255, 255, 0.233);
@@ -46,8 +45,14 @@ body{
     font-size: 1em;
     letter-spacing: 3px;
     color: var(--cor2);
-    margin-left: 36%;
-    margin-top: 3%;
+    margin-top: 5%;
+    min-height: 100vh;
+}
+section{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -94,7 +99,6 @@ fieldset.grupo .campo{
     color: var(--cor2);
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px var(--cor1);
-    
     position:relative;
     top: 90%;
     left: 50%;
@@ -131,4 +135,9 @@ fieldset.grupo .campo{
     box-shadow: inset 2px 2px 2px white;
     text-shadow: none;
     color: white;
+}
+@media (max-width:680px){
+    form{
+        width: auto;
+    }
 }
