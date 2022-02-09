@@ -124,6 +124,7 @@ fieldset.grupo .campo{
     font-size: 1.2em;
     background-color:white;
     border: 0;
+    margin-top: 200px;
     margin-bottom: 1em;
     color: var(--cor2);
     padding: 0.2em 0.6em;
@@ -136,12 +137,55 @@ fieldset.grupo .campo{
     text-shadow: none;
     color: white;
 }
+textarea{
+    width: 26em;
+}
+/*Responnsividade*/
+@media(max-width:680px){
+    #titulo{
+        font-size: 3em;
+    }
+}
+@media(max-width:580px){
+    #titulo{
+        font-size: 2.5em;
+    }
+}
+@media(max-width:680px){
+    #subtitulo{
+        font-size: 1em;
+    }
+}
+    
 @media (max-width:680px){
     form{
-        width: auto;
+        width: 500px;
         background-color: rgba(255, 255, 255, 0.507);
     }
-    footer{
+    .botao-voltar{
         margin-top: 400px;
+    }
+}
+@media (max-width:580px){
+    form{
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.507);
+    }
+    .botao-voltar{
+        margin-top: 400px;
+    }
+}
+@media (max-width:480px){
+    form{
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.507);
+    }
+    .botao-voltar{
+        margin-top: 400px;
+    }
+}
+@media(max-width:680px){
+    textarea{
+        width: 20em;
     }
 }
